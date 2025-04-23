@@ -1,0 +1,53 @@
+/* Texto responsivo */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+  font-size: 1rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#lista-tareas {
+  height: 20rem;
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-borde);
+  color: var(--color-texto);
+}
+
+#tarea-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#formulario-tarea {
+  justify-content: center;
+  display: flex;
+}
+
+#contenedor-contador-tareas {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-borde);
+}
+
+:root {
+  color-scheme: light dark;
+  --color-fondo: light-dark(white, black);
+  --color-borde: light-dark(#d6d9dc, #515354);
+  --color-texto: light-dark(black, white);
+  --color-texto-boton: light-dark(white, black);
+  --ancho-pagina: 80rem;
+}
