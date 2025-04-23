@@ -1,0 +1,137 @@
+/* Estilos básicos para el cuerpo de la página */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #007ef4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 20px;
+}
+
+/* Contenedor principal de la lista de tareas */
+.contenedor {
+  width: 100%;
+  background: #99c2ed;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título */
+#titulo-principal {
+  text-align: center;
+  color: #2780f5;
+  font-size: 1.5rem;
+}
+
+.mensaje-error {
+  color: red;
+  font-size: 1rem;
+  display: none; /* Inicialmente oculto */
+}
+
+/* Estilos básicos para los botones */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Estilos para el botón de añadir tarea */
+#boton-agregar-tarea {
+  background-color: #0073ff;
+  color: white;
+  width: 60px;
+}
+
+/* Cambiar el color de fondo del botón de añadir tarea al pasar el ratón */
+#boton-agregar-tarea:hover {
+  background-color: #032f7a;
+}
+
+.texto-tarea {
+  align-items: center;
+  word-break: break-word; /* Evita que las palabras largas se desborden */
+}
+
+.texto-tarea.completada {
+  text-decoration: line-through;
+}
+
+/* Estilos para el botón de completar tarea */
+.boton-completar {
+  background-color: #2b77e2;
+  color: white;
+}
+
+/* Cambiar el color de fondo del botón de completar tarea al pasar el ratón */
+.boton-completar:hover {
+  background-color: #032f7a;
+}
+
+/* Estilos para el botón de eliminar tarea */
+.boton-eliminar {
+  background-color: #ef5350;
+  color: var(--color-texto-boton);
+}
+
+/* Cambiar el color de fondo del botón de eliminar tarea al pasar el ratón */
+.boton-eliminar:hover {
+  background-color: #c62828;
+}
+
+.item-tarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.contador-tarea {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+html,
+body {
+  overflow: auto; /* Cambiado de hidden a auto */
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  #principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #principal {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor {
+    width: 60%;
+  }
+
+  #titulo-principal {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
